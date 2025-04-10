@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué es CSS? - Mi Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="blog_css.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Blog de Desarrollo Web</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="javascript.html">JavaScript</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <article>
+            <h2>¿Qué es CSS?</h2>
+            <p>CSS (Cascading Style Sheets o Hojas de Estilo en Cascada) es un lenguaje utilizado para describir la presentación de documentos HTML o XML, incluyendo colores, diseño y fuentes. CSS está diseñado para permitir la separación entre el contenido y la presentación, lo que mejora la accesibilidad del contenido, proporciona más flexibilidad y control en la especificación de las características de la presentación, y reduce la complejidad y la repetición en el contenido estructural.</p>
+            
+            <p>Con CSS puedes controlar cómo se ven los elementos HTML en la pantalla, en papel, o en otros medios. CSS es uno de los lenguajes fundamentales de la Web abierta y ha sido estandarizado por el W3C (World Wide Web Consortium).</p>
+            
+            <h3>Componentes básicos de CSS</h3>
+            <p>CSS se compone principalmente de tres elementos fundamentales:</p>
+            
+            <h3>1. Selectores</h3>
+            <p>Los selectores son patrones que se utilizan para seleccionar los elementos HTML a los que queremos aplicar estilos. Los selectores nos permiten "apuntar" a elementos específicos en nuestro documento HTML.</p>
+            
+            <div class="ejemplo-selector">
+                <code>h1 { color: blue; }</code>
+                <p>En este ejemplo, <strong>h1</strong> es el selector que apunta a todos los elementos &lt;h1&gt; del documento.</p>
+            </div>
+            
+            <h3>2. Propiedades</h3>
+            <p>Las propiedades son los aspectos del elemento HTML que queremos modificar. CSS ofrece una amplia variedad de propiedades que controlan todo, desde el color y el tamaño de fuente hasta el espaciado, los bordes y mucho más.</p>
+            
+            <div class="ejemplo-selector">
+                <code>p { color: red; font-size: 16px; }</code>
+                <p>En este ejemplo, <strong>color</strong> y <strong>font-size</strong> son las propiedades que estamos modificando para todos los párrafos &lt;p&gt;.</p>
+            </div>
+            
+            <h3>3. Valores</h3>
+            <p>Los valores son las configuraciones específicas que asignamos a cada propiedad. Cada propiedad CSS acepta diferentes tipos de valores, como colores, dimensiones, URLs, entre otros.</p>
+            
+            <div class="ejemplo-selector">
+                <code>h2 { color: #3498db; margin: 20px; }</code>
+                <p>En este ejemplo, <strong>#3498db</strong> y <strong>20px</strong> son los valores asignados a las propiedades color y margin, respectivamente.</p>
+            </div>
+            
+            <h3>Tipos de Selectores en CSS</h3>
+            <p>CSS ofrece diversos tipos de selectores para dirigirse a elementos específicos. Los tres tipos principales son:</p>
+            
+            <h3>1. Selector por Tipo (Elemento)</h3>
+            <p>Este selector apunta a todos los elementos de un tipo específico en el documento HTML.</p>
+            
+            <div class="ejemplo-selector ejemplo-tipo">
+                <code>p { color: green; }</code>
+                <p>Este selector aplicará el color verde a todos los párrafos &lt;p&gt; del documento.</p>
+            </div>
+            
+            <h3>2. Selector por Clase</h3>
+            <p>Este selector apunta a elementos que tienen un atributo class específico.</p>
+            
+            <div class="ejemplo-selector ejemplo-clase">
+                <code>.destacado { font-weight: bold; }</code>
+                <p>Este selector aplicará negrita a todos los elementos que tengan la clase "destacado" (como &lt;p class="destacado"&gt;).</p>
+            </div>
+            
+            <h3>3. Selector por ID</h3>
+            <p>Este selector apunta a un elemento específico que tiene un atributo id único.</p>
+            
+            <div class="ejemplo-selector" id="ejemplo-id">
+                <code>#encabezado-principal { font-size: 32px; }</code>
+                <p>Este selector aplicará un tamaño de fuente de 32px al elemento con id="encabezado-principal" (como &lt;h1 id="encabezado-principal"&gt;).</p>
+            </div>
+            
+            <h3>Diferencias entre los tipos de selectores</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Selector por Tipo</th>
+                        <th>Selector por Clase</th>
+                        <th>Selector por ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sintaxis</td>
+                        <td>elemento { }</td>
+                        <td>.nombre-clase { }</td>
+                        <td>#nombre-id { }</td>
+                    </tr>
+                    <tr>
+                        <td>Aplica a</td>
+                        <td>Todos los elementos del tipo especificado</td>
+                        <td>Múltiples elementos con la misma clase</td>
+                        <td>Un único elemento con el ID específico</td>
+                    </tr>
+                    <tr>
+                        <td>Reutilización</td>
+                        <td>Amplia, afecta a todos los elementos del mismo tipo</td>
+                        <td>Alta, se puede aplicar a múltiples elementos</td>
+                        <td>Nula, solo se usa una vez por página</td>
+                    </tr>
+                    <tr>
+                        <td>Especificidad</td>
+                        <td>Baja</td>
+                        <td>Media</td>
+                        <td>Alta</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>Conclusión</h3>
+            <p>CSS es una herramienta poderosa que nos permite controlar completamente la apariencia de nuestras páginas web. Al dominar los selectores, propiedades y valores, podemos crear diseños web atractivos y profesionales que mejoren la experiencia del usuario.</p>
+            
+            <p>Recuerda que la práctica es fundamental para dominar CSS. Experimenta con diferentes selectores y propiedades para ver cómo afectan a tu página web y, con el tiempo, desarrollarás la intuición necesaria para crear diseños web efectivos y atractivos.</p>
+        </article>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Mi Blog de Desarrollo Web | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
