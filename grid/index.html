@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos los Layouts CSS Grid</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Layouts con CSS Grid</h1>
+    
+    <!-- LAYOUT 1 -->
+    <h2>Layout 1 - Grid 3x2</h2>
+    <div class="layout-container">
+        <div class="browser-bar">
+            <div class="dots">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+            </div>
+            <div class="address-bar"></div>
+        </div>
+        <div class="grid-container-1">
+            <div class="grid-item layout1-item1">Elemento 1</div>
+            <div class="grid-item layout1-item2">Elemento 2</div>
+            <div class="grid-item layout1-item3">Elemento 3</div>
+            <div class="grid-item layout1-item4">Elemento 4</div>
+            <div class="grid-item layout1-item5">Elemento 5</div>
+            <div class="grid-item layout1-item6">Elemento 6</div>
+        </div>
+    </div>
+    
+    <!-- LAYOUT 2 -->
+    <h2>Layout 2 - Grid Asimétrico</h2>
+    <div class="layout-container">
+        <div class="browser-bar">
+            <div class="dots">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+            </div>
+            <div class="address-bar"></div>
+        </div>
+        <div class="grid-container-2">
+            <div class="grid-item layout2-item1">Cabecera</div>
+            <div class="grid-item layout2-item2">Columna Izquierda</div>
+            <div class="grid-item layout2-item3">Sección Superior</div>
+            <div class="grid-item layout2-item4">Artículo 1</div>
+            <div class="grid-item layout2-item5">Artículo 2</div>
+        </div>
+    </div>
+    
+    <!-- LAYOUT 3 -->
+    <h2>Layout 3 - Grid con bloques horizontales</h2>
+    <div class="layout-container">
+        <div class="browser-bar">
+            <div class="dots">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+            </div>
+            <div class="address-bar"></div>
+        </div>
+        <div class="grid-container-3">
+            <div class="grid-item layout3-item1">Header izquierdo</div>
+            <div class="grid-item layout3-item2">Header derecho</div>
+            <div class="grid-item layout3-item3">Contenido lateral</div>
+            <div class="grid-item layout3-item4">Contenido principal</div>
+            <div class="grid-item layout3-item5">Footer</div>
+        </div>
+    </div>
+    
+    <!-- LAYOUT 4 -->
+    <h2>Layout 4 - Grid Anidada Compleja</h2>
+    <div class="layout-container">
+        <div class="browser-bar">
+            <div class="dots">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+            </div>
+            <div class="address-bar"></div>
+        </div>
+        <div class="grid-container-4">
+            <div class="grid-item layout4-item1">Header 1</div>
+            <div class="grid-item layout4-item2">Header 2</div>
+            <div class="grid-item layout4-item3">Contenido Principal</div>
+            <div class="grid-item layout4-container">
+                <div class="nested-grid layout4-item4">
+                    <div class="grid-item nested-item1">Sección Superior</div>
+                    <div class="grid-item nested-item2">Bloque Izquierdo</div>
+                    <div class="grid-item nested-item3">Bloque Derecho</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
